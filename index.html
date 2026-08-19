@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="id">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260818-23-8d3f73f","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/7949ff62d67710d5.telemetry_sdk.js" integrity="sha512-KIvXA82Di44YY/RH9/63A9MuTuavYgDFG8PfErJn7Wli4K0LAOk+coo/aPXk3+ZNL96nHh9VYD4PE+fLes+laQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Pembelajaran Interaktif - Asmaul Husna</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+  <style>
+        :root { --vh: 1vh; }
+        body { font-family: 'DM Sans', sans-serif; }
+        .font-heading { font-family: 'Playfair Display', serif; }
+        .nav-item { transition: all 0.2s; }
+        .nav-item:hover, .nav-item.active { background: rgba(255,255,255,0.15); transform: translateX(4px); }
+        .slide-in { animation: slideIn 0.4s ease-out; }
+        @keyframes slideIn { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+        .zone-red { background: #ef4444; }
+        .zone-blue { background: #3b82f6; }
+        .zone-green { background: #22c55e; }
+        .zone-yellow { background: #eab308; }
+        .quiz-option { transition: all 0.15s; }
+        .quiz-option:active { transform: scale(0.95); }
+        .correct-flash { animation: correctPulse 0.5s; }
+        @keyframes correctPulse { 0%,100%{ box-shadow:none; } 50%{ box-shadow: 0 0 0 6px rgba(34,197,94,0.4); } }
+        .wrong-flash { animation: wrongShake 0.4s; }
+        @keyframes wrongShake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-8px)} 75%{transform:translateX(8px)} }
+        .hidden { display: none !important; }
+        .card-material { background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%); border-radius: 20px; padding: 2rem; box-shadow: 0 8px 28px rgba(30,58,95,0.12); border: 2px solid rgba(251,191,36,0.25); }
+        .arabic-text { font-size: 1.8rem; direction: rtl; line-height: 2.2; }
+        .match-item { cursor: pointer; transition: all 0.2s; border: 3px solid transparent; }
+        .match-item.selected { border-color: #3b82f6; transform: scale(1.05); box-shadow: 0 4px 12px rgba(59,130,246,0.3); }
+        .match-item.matched { border-color: #22c55e; background: #f0fdf4 !important; }
+        .match-item.wrong-match { border-color: #ef4444; }
+        .bs-option { transition: all 0.2s; }
+        .bs-option:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .quiz-type-btn { transition: all 0.2s; }
+        .quiz-type-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    </style>
+  <script src="/_sdk/eba18683f23e5798.resizing_sdk.js" type="text/javascript" integrity="sha512-E0UWUllhwPXaNJtjyTKXWKrIE+FruPfFpO4mRmMDP2LI+U9bOizy5npCq6xx/JyWcvSK7D3TFf2wFR2Mha9kbA=="></script>
+ <script src="/_sdk/0e8d3a91e1c6f495.data_sdk.js" integrity="sha512-c00oDoGjsMgluCLLEyVl3suwEkgjOGGplVFbsilUoBg4aMKNmsL3mwsc9r0dPn95qiSZyjBousQXgROkAW7p/w=="></script></head>
+ <body data-template-id="__page-root" class="min-h-screen w-full flex"><!-- Sidebar -->
+  <aside data-template-id="sidebar" class="canva-sidebar w-72 min-h-screen flex-shrink-0 p-6 flex flex-col">
+   <div class="mb-8">
+    <h1 data-template-id="app-title" class="canva-text font-heading text-xl text-white mb-1"></h1>
+    <p data-template-id="app-subtitle" class="canva-text text-sm text-emerald-300"></p>
+   </div>
+   <nav class="flex-1 space-y-1" id="nav-menu"><button onclick="showSection('home')" class="nav-item active w-full text-left text-white px-4 py-3 rounded-lg flex items-center gap-3" data-nav="home"><i data-lucide="home" style="width:18px;height:18px"></i><span>Beranda</span></button> <button onclick="showSection('pengantar')" class="nav-item w-full text-left text-white px-4 py-3 rounded-lg flex items-center gap-3" data-nav="pengantar"><i data-lucide="book-open" style="width:18px;height:18px"></i><span>Pengantar</span></button> <button onclick="showSection('alhalim')" class="nav-item w-full text-left text-white px-4 py-3 rounded-lg flex items-center gap-3" data-nav="alhalim"><i data-lucide="heart" style="width:18px;height:18px"></i><span>Al-Halīm</span></button> <button onclick="showSection('asysyakur')" class="nav-item w-full text-left text-white px-4 py-3 rounded-lg flex items-center gap-3" data-nav="asysyakur"><i data-lucide="sparkles" style="width:18px;height:18px"></i><span>Asy-Syakūr</span></button> <button onclick="showSection('alhakiim')" class="nav-item w-full text-left text-white px-4 py-3 rounded-lg flex items-center gap-3" data-nav="alhakiim"><i data-lucide="lightbulb" style="width:18px;height:18px"></i><span>Al-Hakīm</span></button> <button onclick="showSection('alwaduud')" class="nav-item w-full text-left text-white px-4 py-3 rounded-lg flex items-center gap-3" data-nav="alwaduud"><i data-lucide="heart-handshake" style="width:18px;height:18px"></i><span>Al-Wadūd</span></button> <button onclick="showSection('quiz')" class="nav-item w-full text-left text-white px-4 py-3 rounded-lg flex items-center gap-3" data-nav="quiz"><i data-lucide="gamepad-2" style="width:18px;height:18px"></i><span>Kuis Interaktif</span></button> <button onclick="showSection('skor')" class="nav-item w-full text-left text-white px-4 py-3 rounded-lg flex items-center gap-3" data-nav="skor"><i data-lucide="trophy" style="width:18px;height:18px"></i><span>Papan Skor</span></button>
+   </nav>
+  </aside><!-- Main Content -->
+  <main class="flex-1 overflow-y-auto p-8" style="max-height: calc(100 * min(var(--vh, 1vh), 1vh));"><!-- HOME -->
+   <section id="sec-home" class="slide-in">
+    <div class="relative rounded-2xl overflow-hidden mb-8" style="height:320px;"><img data-template-id="hero-image" class="canva-image w-full h-full object-cover" loading="lazy">
+     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
+      <div>
+       <h2 data-template-id="hero-title" class="canva-text font-heading text-3xl text-white mb-2"></h2>
+       <p data-template-id="hero-desc" class="canva-text text-white/90 text-lg max-w-2xl"></p>
+      </div>
+     </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+     <div data-template-id="card-halim" class="canva-card rounded-xl p-6 text-center cursor-pointer hover:scale-105 transition" onclick="showSection('alhalim')">
+      <div class="text-4xl mb-3">
+       🤲
+      </div>
+      <h3 data-template-id="card-halim-title" class="canva-text font-bold text-lg"></h3>
+      <p data-template-id="card-halim-desc" class="canva-text text-sm mt-1"></p>
+     </div>
+     <div data-template-id="card-syakur" class="canva-card rounded-xl p-6 text-center cursor-pointer hover:scale-105 transition" onclick="showSection('asysyakur')">
+      <div class="text-4xl mb-3">
+       ✨
+      </div>
+      <h3 data-template-id="card-syakur-title" class="canva-text font-bold text-lg"></h3>
+      <p data-template-id="card-syakur-desc" class="canva-text text-sm mt-1"></p>
+     </div>
+     <div data-template-id="card-hakiim" class="canva-card rounded-xl p-6 text-center cursor-pointer hover:scale-105 transition" onclick="showSection('alhakiim')">
+      <div class="text-4xl mb-3">
+       💡
+      </div>
+      <h3 data-template-id="card-hakiim-title" class="canva-text font-bold text-lg"></h3>
+      <p data-template-id="card-hakiim-desc" class="canva-text text-sm mt-1"></p>
+     </div>
+     <div data-template-id="card-waduud" class="canva-card rounded-xl p-6 text-center cursor-pointer hover:scale-105 transition" onclick="showSection('alwaduud')">
+      <div class="text-4xl mb-3">
+       💝
+      </div>
+      <h3 data-template-id="card-waduud-title" class="canva-text font-bold text-lg"></h3>
+      <p data-template-id="card-waduud-desc" class="canva-text text-sm mt-1"></p>
+     </div>
+    </div>
+   </section><!-- PENGANTAR -->
+   <section id="sec-pengantar" class="hidden slide-in">
+    <button type="button" onclick="showSection('home')" class="mb-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-5 py-2.5 font-bold text-white shadow-md hover:scale-105 transition"><i data-lucide="home" style="width:18px;height:18px"></i> Kembali ke Beranda</button>
+    <div class="card-material max-w-4xl mx-auto">
+     <h2 data-template-id="pengantar-title" class="canva-text font-heading text-2xl mb-6"></h2><img data-template-id="pengantar-img" class="canva-image w-full h-48 object-cover rounded-xl mb-6" loading="lazy">
+     <div class="space-y-4 text-gray-700 leading-relaxed">
+      <p data-template-id="pengantar-p1" class="canva-text"></p>
+      <p data-template-id="pengantar-p2" class="canva-text"></p>
+      <p data-template-id="pengantar-p3" class="canva-text"></p>
+      <p data-template-id="pengantar-p4" class="canva-text"></p>
+     </div>
+    </div>
+   </section><!-- AL-HALIM -->
+   <section id="sec-alhalim" class="hidden slide-in">
+    <button type="button" onclick="showSection('home')" class="mb-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-400 to-teal-500 px-5 py-2.5 font-bold text-white shadow-md hover:scale-105 transition"><i data-lucide="home" style="width:18px;height:18px"></i> Kembali ke Beranda</button>
+    <div class="card-material max-w-4xl mx-auto">
+     <h2 data-template-id="halim-title" class="canva-text font-heading text-2xl mb-2"></h2>
+     <p data-template-id="halim-arti" class="canva-text text-emerald-700 font-medium text-lg mb-6"></p>
+     <div class="bg-emerald-50 rounded-xl p-6 mb-6">
+      <p data-template-id="halim-pengertian" class="canva-text"></p>
+     </div>
+     <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 mb-6">
+      <p data-template-id="halim-dalil-label" class="canva-text font-bold mb-2"></p>
+      <p data-template-id="halim-ayat" class="canva-text arabic-text text-center mb-3"></p>
+      <p data-template-id="halim-latin" class="canva-text italic text-gray-600 mb-2"></p>
+      <p data-template-id="halim-terjemah" class="canva-text text-gray-800"></p>
+     </div><img data-template-id="halim-img" class="canva-image w-full h-48 object-cover rounded-xl mb-6" loading="lazy">
+     <div class="space-y-3">
+      <p data-template-id="halim-bukti-title" class="canva-text font-bold"></p>
+      <p data-template-id="halim-bukti" class="canva-text"></p>
+      <p data-template-id="halim-teladan-title" class="canva-text font-bold"></p>
+      <p data-template-id="halim-teladan" class="canva-text"></p>
+     </div>
+    </div>
+   </section><!-- ASY-SYAKUR -->
+   <section id="sec-asysyakur" class="hidden slide-in">
+    <button type="button" onclick="showSection('home')" class="mb-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 px-5 py-2.5 font-bold text-white shadow-md hover:scale-105 transition"><i data-lucide="home" style="width:18px;height:18px"></i> Kembali ke Beranda</button>
+    <div class="card-material max-w-4xl mx-auto">
+     <h2 data-template-id="syakur-title" class="canva-text font-heading text-2xl mb-2"></h2>
+     <p data-template-id="syakur-arti" class="canva-text text-amber-700 font-medium text-lg mb-6"></p>
+     <div class="bg-amber-50 rounded-xl p-6 mb-6">
+      <p data-template-id="syakur-pengertian" class="canva-text"></p>
+     </div>
+     <div class="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-xl p-6 mb-6">
+      <p data-template-id="syakur-dalil-label" class="canva-text font-bold mb-2"></p>
+      <p data-template-id="syakur-ayat" class="canva-text arabic-text text-center mb-3"></p>
+      <p data-template-id="syakur-latin" class="canva-text italic text-gray-600 mb-2"></p>
+      <p data-template-id="syakur-terjemah" class="canva-text text-gray-800"></p>
+     </div><img data-template-id="syakur-img" class="canva-image w-full h-48 object-cover rounded-xl mb-6" loading="lazy">
+     <div class="space-y-3">
+      <p data-template-id="syakur-bukti-title" class="canva-text font-bold"></p>
+      <p data-template-id="syakur-bukti" class="canva-text"></p>
+      <p data-template-id="syakur-teladan-title" class="canva-text font-bold"></p>
+      <p data-template-id="syakur-teladan" class="canva-text"></p>
+     </div>
+    </div>
+   </section><!-- AL-HAKIIM -->
+   <section id="sec-alhakiim" class="hidden slide-in">
+    <button type="button" onclick="showSection('home')" class="mb-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-400 to-cyan-500 px-5 py-2.5 font-bold text-white shadow-md hover:scale-105 transition"><i data-lucide="home" style="width:18px;height:18px"></i> Kembali ke Beranda</button>
+    <div class="card-material max-w-4xl mx-auto">
+     <h2 data-template-id="hakiim-title" class="canva-text font-heading text-2xl mb-2"></h2>
+     <p data-template-id="hakiim-arti" class="canva-text text-blue-700 font-medium text-lg mb-6"></p>
+     <div class="bg-blue-50 rounded-xl p-6 mb-6">
+      <p data-template-id="hakiim-pengertian" class="canva-text"></p>
+     </div>
+     <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 mb-6">
+      <p data-template-id="hakiim-dalil-label" class="canva-text font-bold mb-2"></p>
+      <p data-template-id="hakiim-ayat" class="canva-text arabic-text text-center mb-3"></p>
+      <p data-template-id="hakiim-latin" class="canva-text italic text-gray-600 mb-2"></p>
+      <p data-template-id="hakiim-terjemah" class="canva-text text-gray-800"></p>
+     </div><img data-template-id="hakiim-img" class="canva-image w-full h-48 object-cover rounded-xl mb-6" loading="lazy">
+     <div class="space-y-3">
+      <p data-template-id="hakiim-bukti-title" class="canva-text font-bold"></p>
+      <p data-template-id="hakiim-bukti" class="canva-text"></p>
+      <p data-template-id="hakiim-teladan-title" class="canva-text font-bold"></p>
+      <p data-template-id="hakiim-teladan" class="canva-text"></p>
+     </div>
+    </div>
+   </section><!-- AL-WADUUD -->
+   <section id="sec-alwaduud" class="hidden slide-in">
+    <button type="button" onclick="showSection('home')" class="mb-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-400 to-rose-500 px-5 py-2.5 font-bold text-white shadow-md hover:scale-105 transition"><i data-lucide="home" style="width:18px;height:18px"></i> Kembali ke Beranda</button>
+    <div class="card-material max-w-4xl mx-auto">
+     <h2 data-template-id="waduud-title" class="canva-text font-heading text-2xl mb-2"></h2>
+     <p data-template-id="waduud-arti" class="canva-text text-pink-700 font-medium text-lg mb-6"></p>
+     <div class="bg-pink-50 rounded-xl p-6 mb-6">
+      <p data-template-id="waduud-pengertian" class="canva-text"></p>
+     </div>
+     <div class="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-6 mb-6">
+      <p data-template-id="waduud-dalil-label" class="canva-text font-bold mb-2"></p>
+      <p data-template-id="waduud-ayat" class="canva-text arabic-text text-center mb-3"></p>
+      <p data-template-id="waduud-latin" class="canva-text italic text-gray-600 mb-2"></p>
+      <p data-template-id="waduud-terjemah" class="canva-text text-gray-800"></p>
+     </div><img data-template-id="waduud-img" class="canva-image w-full h-48 object-cover rounded-xl mb-6" loading="lazy">
+     <div class="space-y-3">
+      <p data-template-id="waduud-bukti-title" class="canva-text font-bold"></p>
+      <p data-template-id="waduud-bukti" class="canva-text"></p>
+      <p data-template-id="waduud-teladan-title" class="canva-text font-bold"></p>
+      <p data-template-id="waduud-teladan" class="canva-text"></p>
+     </div>
+    </div>
+   </section><!-- QUIZ -->
+   <section id="sec-quiz" class="hidden slide-in">
+    <button type="button" onclick="showSection('home')" class="mb-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-400 to-fuchsia-500 px-5 py-2.5 font-bold text-white shadow-md hover:scale-105 transition"><i data-lucide="home" style="width:18px;height:18px"></i> Kembali ke Beranda</button>
+    <div class="mb-6 text-center">
+     <h2 data-template-id="quiz-title" class="canva-text font-heading text-2xl mb-2"></h2>
+     <p data-template-id="quiz-instructions" class="canva-text text-gray-600"></p>
+    </div><!-- Quiz Type Selection -->
+    <div id="quiz-type-select" class="max-w-3xl mx-auto">
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"><button onclick="startQuizType('dragdrop')" class="quiz-type-btn bg-white rounded-xl p-6 text-left shadow-sm border-2 border-transparent hover:border-blue-400">
+       <div class="text-3xl mb-2">
+        🎯
+       </div><h3 class="font-bold text-lg text-gray-800">Drag &amp; Drop (Jodohkan)</h3><p class="text-sm text-gray-500 mt-1">Cocokkan nama dengan artinya</p></button> <button onclick="startQuizType('shortanswer')" class="quiz-type-btn bg-white rounded-xl p-6 text-left shadow-sm border-2 border-transparent hover:border-emerald-400">
+       <div class="text-3xl mb-2">
+        ✍️
+       </div><h3 class="font-bold text-lg text-gray-800">Isian Singkat</h3><p class="text-sm text-gray-500 mt-1">Lengkapi jawaban dengan tepat</p></button> <button onclick="startQuizType('truefalse')" class="quiz-type-btn bg-white rounded-xl p-6 text-left shadow-sm border-2 border-transparent hover:border-amber-400">
+       <div class="text-3xl mb-2">
+        ✅
+       </div><h3 class="font-bold text-lg text-gray-800">Benar atau Salah</h3><p class="text-sm text-gray-500 mt-1">Pernyataan kritis + alasan</p></button> <button onclick="startQuizType('multiplayer')" class="quiz-type-btn bg-white rounded-xl p-6 text-left shadow-sm border-2 border-transparent hover:border-red-400">
+       <div class="text-3xl mb-2">
+        🎮
+       </div><h3 class="font-bold text-lg text-gray-800">Multiplayer 4 Pemain</h3><p class="text-sm text-gray-500 mt-1">Siapa cepat &amp; tepat di IFP</p></button>
+     </div>
+    </div><!-- Multiplayer Setup -->
+    <div id="quiz-setup" class="hidden max-w-2xl mx-auto card-material">
+     <h3 data-template-id="quiz-setup-title" class="canva-text font-bold text-lg mb-4"></h3>
+     <div class="grid grid-cols-2 gap-4 mb-6">
+      <div class="flex items-center gap-2">
+       <div class="w-6 h-6 rounded-full bg-red-500"></div><input id="player-red" type="text" placeholder="Pemain Merah" class="border rounded-lg px-3 py-2 flex-1">
+      </div>
+      <div class="flex items-center gap-2">
+       <div class="w-6 h-6 rounded-full bg-blue-500"></div><input id="player-blue" type="text" placeholder="Pemain Biru" class="border rounded-lg px-3 py-2 flex-1">
+      </div>
+      <div class="flex items-center gap-2">
+       <div class="w-6 h-6 rounded-full bg-green-500"></div><input id="player-green" type="text" placeholder="Pemain Hijau" class="border rounded-lg px-3 py-2 flex-1">
+      </div>
+      <div class="flex items-center gap-2">
+       <div class="w-6 h-6 rounded-full bg-yellow-400"></div><input id="player-yellow" type="text" placeholder="Pemain Kuning" class="border rounded-lg px-3 py-2 flex-1">
+      </div>
+     </div><button onclick="startMultiplayer()" data-template-id="quiz-start-btn" class="canva-button w-full py-3 rounded-xl font-bold text-lg text-white"></button>
+    </div><!-- Multiplayer Game -->
+    <div id="quiz-game" class="hidden">
+     <div class="text-center mb-4">
+      <div class="inline-flex items-center gap-2 bg-white rounded-full px-6 py-2 shadow"><span class="font-bold text-gray-700">Soal <span id="q-num">1</span>/5</span> <span class="text-gray-400">|</span> <span id="q-timer" class="font-bold text-red-500">10</span>
+      </div>
+     </div>
+     <div id="q-text" class="text-center text-xl font-medium mb-6 text-gray-800"></div>
+     <div class="grid grid-cols-2 gap-3" style="height:400px;" id="zones-container">
+      <div class="zone-red rounded-2xl p-4 flex flex-col items-center justify-center">
+       <p class="text-white font-bold mb-2" id="zone-red-name">Merah</p>
+       <div id="zone-red-options" class="space-y-2 w-full"></div>
+       <div id="zone-red-score" class="mt-3 text-white/80 font-medium">
+        0
+       </div>
+      </div>
+      <div class="zone-blue rounded-2xl p-4 flex flex-col items-center justify-center">
+       <p class="text-white font-bold mb-2" id="zone-blue-name">Biru</p>
+       <div id="zone-blue-options" class="space-y-2 w-full"></div>
+       <div id="zone-blue-score" class="mt-3 text-white/80 font-medium">
+        0
+       </div>
+      </div>
+      <div class="zone-green rounded-2xl p-4 flex flex-col items-center justify-center">
+       <p class="text-white font-bold mb-2" id="zone-green-name">Hijau</p>
+       <div id="zone-green-options" class="space-y-2 w-full"></div>
+       <div id="zone-green-score" class="mt-3 text-white/80 font-medium">
+        0
+       </div>
+      </div>
+      <div class="zone-yellow rounded-2xl p-4 flex flex-col items-center justify-center">
+       <p class="text-white font-bold mb-2" id="zone-yellow-name">Kuning</p>
+       <div id="zone-yellow-options" class="space-y-2 w-full"></div>
+       <div id="zone-yellow-score" class="mt-3 text-white/80 font-medium">
+        0
+       </div>
+      </div>
+     </div>
+    </div><!-- Drag & Drop Quiz -->
+    <div id="quiz-dragdrop" class="hidden max-w-4xl mx-auto">
+     <div class="text-center mb-4">
+      <h3 class="font-bold text-xl text-gray-800">🎯 Jodohkan Nama dengan Artinya</h3>
+      <p class="text-gray-500 text-sm mt-1">Sentuh nama di kiri, lalu sentuh arti yang sesuai di kanan</p>
+     </div>
+     <div id="dd-container" class="grid grid-cols-2 gap-8"></div>
+     <div id="dd-feedback" class="text-center mt-6 font-bold text-lg"></div>
+    </div><!-- Short Answer Quiz -->
+    <div id="quiz-shortanswer" class="hidden max-w-3xl mx-auto">
+     <div id="sa-container"></div>
+    </div><!-- True/False Quiz -->
+    <div id="quiz-truefalse" class="hidden max-w-3xl mx-auto">
+     <div id="tf-container"></div>
+    </div><!-- Result -->
+    <div id="quiz-result" class="hidden text-center card-material max-w-2xl mx-auto"><img data-template-id="trophy-img" class="canva-image w-32 h-32 object-cover rounded-full mx-auto mb-4" loading="lazy">
+     <h3 data-template-id="quiz-result-title" class="canva-text font-heading text-2xl mb-4"></h3>
+     <div id="final-scores" class="space-y-3 mb-6"></div><button onclick="resetQuiz()" data-template-id="quiz-replay-btn" class="canva-button px-8 py-3 rounded-xl font-bold text-white"></button>
+    </div>
+   </section><!-- SKOR -->
+   <section id="sec-skor" class="hidden slide-in">
+    <button type="button" onclick="showSection('home')" class="mb-5 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-400 to-purple-500 px-5 py-2.5 font-bold text-white shadow-md hover:scale-105 transition"><i data-lucide="home" style="width:18px;height:18px"></i> Kembali ke Beranda</button>
+    <h2 data-template-id="skor-title" class="canva-text font-heading text-2xl mb-6"></h2>
+    <div id="score-list" class="space-y-3 max-w-2xl mx-auto">
+     <p data-template-id="skor-empty" class="canva-text text-gray-500 text-center py-8"></p>
+    </div>
+   </section>
+  </main>
+  <script src="/_sdk/d97541380e824b1a.editing_sdk.js" integrity="sha512-iBVkuiyctyjmaqUwrsoYSc/nxwymdEKZMKPeBCNj6uN/7hFPTiMVeunYJjJVnUh1GNECKEyCerl7IHtlqhzSYQ=="></script>
+  <script src="/_sdk/0e8d3a91e1c6f495.data_sdk.js" integrity="sha512-c00oDoGjsMgluCLLEyVl3suwEkgjOGGplVFbsilUoBg4aMKNmsL3mwsc9r0dPn95qiSZyjBousQXgROkAW7p/w=="></script>
+  <script>
+        // Navigation
+        function showSection(id) {
+            document.querySelectorAll('main > section').forEach(s => s.classList.add('hidden'));
+            const sec = document.getElementById('sec-' + id);
+            if (sec) { sec.classList.remove('hidden'); sec.classList.add('slide-in'); }
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            const navBtn = document.querySelector(`[data-nav="${id}"]`);
+            if (navBtn) navBtn.classList.add('active');
+        }
+
+        // ========== MULTIPLAYER QUIZ ==========
+        const multiQuestions = [
+            { q: "Apa arti Al-Halīm?", options: ["Maha Penyabar", "Maha Penyayang", "Maha Bijaksana", "Maha Pengasih"], answer: 0 },
+            { q: "Asy-Syakūr artinya...", options: ["Maha Kaya", "Maha Berterima Kasih", "Maha Perkasa", "Maha Adil"], answer: 1 },
+            { q: "Al-Hakīm berarti...", options: ["Maha Pengampun", "Maha Besar", "Maha Bijaksana", "Maha Kuasa"], answer: 2 },
+            { q: "Al-Wadūd artinya...", options: ["Maha Pencinta", "Maha Pemberi", "Maha Penyembuh", "Maha Penolong"], answer: 0 },
+            { q: "Allah tidak segera menghukum hamba yang berdosa. Ini mencerminkan sifat...", options: ["Al-Hakīm", "Al-Halīm", "Asy-Syakūr", "Al-Wadūd"], answer: 1 }
+        ];
+
+        let players = { red:{name:'',score:0}, blue:{name:'',score:0}, green:{name:'',score:0}, yellow:{name:'',score:0} };
+        let currentQ = 0, timer = null, answered = {};
+
+        function startQuizType(type) {
+            document.getElementById('quiz-type-select').classList.add('hidden');
+            if (type === 'multiplayer') {
+                document.getElementById('quiz-setup').classList.remove('hidden');
+            } else if (type === 'dragdrop') {
+                document.getElementById('quiz-dragdrop').classList.remove('hidden');
+                initDragDrop();
+            } else if (type === 'shortanswer') {
+                document.getElementById('quiz-shortanswer').classList.remove('hidden');
+                initShortAnswer();
+            } else if (type === 'truefalse') {
+                document.getElementById('quiz-truefalse').classList.remove('hidden');
+                initTrueFalse();
+            }
+        }
+
+        function startMultiplayer() {
+            players.red.name = document.getElementById('player-red').value || 'Merah';
+            players.blue.name = document.getElementById('player-blue').value || 'Biru';
+            players.green.name = document.getElementById('player-green').value || 'Hijau';
+            players.yellow.name = document.getElementById('player-yellow').value || 'Kuning';
+            players.red.score=0; players.blue.score=0; players.green.score=0; players.yellow.score=0;
+            currentQ = 0;
+            document.getElementById('quiz-setup').classList.add('hidden');
+            document.getElementById('quiz-game').classList.remove('hidden');
+            document.getElementById('zone-red-name').textContent = players.red.name;
+            document.getElementById('zone-blue-name').textContent = players.blue.name;
+            document.getElementById('zone-green-name').textContent = players.green.name;
+            document.getElementById('zone-yellow-name').textContent = players.yellow.name;
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            if (currentQ >= multiQuestions.length) { endMultiplayer(); return; }
+            answered = {};
+            const q = multiQuestions[currentQ];
+            document.getElementById('q-num').textContent = currentQ + 1;
+            document.getElementById('q-text').textContent = q.q;
+            ['red','blue','green','yellow'].forEach(color => {
+                const container = document.getElementById(`zone-${color}-options`);
+                container.innerHTML = '';
+                q.options.forEach((opt, i) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'quiz-option w-full py-2 px-3 bg-white/90 rounded-lg text-sm font-medium text-gray-800 hover:bg-white';
+                    btn.textContent = opt;
+                    btn.onclick = () => handleAnswer(color, i, btn);
+                    container.appendChild(btn);
+                });
+                document.getElementById(`zone-${color}-score`).textContent = players[color].score;
+            });
+            startTimer();
+        }
+
+        function startTimer() {
+            let t = 10;
+            document.getElementById('q-timer').textContent = t;
+            clearInterval(timer);
+            timer = setInterval(() => {
+                t--;
+                document.getElementById('q-timer').textContent = t;
+                if (t <= 0) { clearInterval(timer); currentQ++; loadQuestion(); }
+            }, 1000);
+        }
+
+        function handleAnswer(color, idx, btn) {
+            if (answered[color]) return;
+            answered[color] = true;
+            const correct = multiQuestions[currentQ].answer === idx;
+            if (correct) {
+                players[color].score += 10;
+                btn.classList.add('correct-flash');
+                btn.style.background = '#bbf7d0';
+            } else {
+                btn.classList.add('wrong-flash');
+                btn.style.background = '#fecaca';
+            }
+            document.getElementById(`zone-${color}-score`).textContent = players[color].score;
+            document.getElementById(`zone-${color}-options`).querySelectorAll('button').forEach(b => b.disabled = true);
+            if (Object.keys(answered).length === 4) { clearInterval(timer); setTimeout(() => { currentQ++; loadQuestion(); }, 1200); }
+        }
+
+        async function endMultiplayer() {
+            document.getElementById('quiz-game').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+            const sorted = Object.entries(players).sort((a,b) => b[1].score - a[1].score);
+            const container = document.getElementById('final-scores');
+            container.innerHTML = '';
+            const colors = { red:'bg-red-100 text-red-800', blue:'bg-blue-100 text-blue-800', green:'bg-green-100 text-green-800', yellow:'bg-yellow-100 text-yellow-800' };
+            sorted.forEach(([c, p], i) => {
+                const div = document.createElement('div');
+                div.className = `flex items-center justify-between px-4 py-3 rounded-lg ${colors[c]}`;
+                div.innerHTML = `<span class="font-bold">${i+1}. ${p.name}</span><span class="font-bold">${p.score} poin</span>`;
+                container.appendChild(div);
+            });
+            const dateStr = new Date().toISOString();
+            for (const [c, p] of Object.entries(players)) {
+                if (p.name && p.score > 0) {
+                    await window.dataSdk.create({ player_name: p.name, zone_color: c, score: p.score, quiz_date: dateStr });
+                }
+            }
+        }
+
+        // ========== DRAG & DROP QUIZ ==========
+        const ddData = [
+            { left: "Al-Halīm", right: "Maha Penyabar" },
+            { left: "Asy-Syakūr", right: "Maha Berterima Kasih" },
+            { left: "Al-Hakīm", right: "Maha Bijaksana" },
+            { left: "Al-Wadūd", right: "Maha Pencinta" },
+            { left: "Al-Ghafūr", right: "Maha Pengampun" }
+        ];
+        let ddSelected = null, ddMatched = 0;
+
+        function initDragDrop() {
+            ddSelected = null; ddMatched = 0;
+            const container = document.getElementById('dd-container');
+            const feedback = document.getElementById('dd-feedback');
+            feedback.textContent = '';
+            const shuffledRight = [...ddData].sort(() => Math.random() - 0.5);
+            container.innerHTML = `
+                <div class="space-y-4" id="dd-left">${ddData.map((d,i) => `<div class="match-item bg-emerald-50 rounded-xl p-4 text-center font-bold text-lg text-emerald-800" data-dd-left="${i}" onclick="ddSelectLeft(${i})">${d.left}</div>`).join('')}</div>
+                <div class="space-y-4" id="dd-right">${shuffledRight.map((d,i) => `<div class="match-item bg-amber-50 rounded-xl p-4 text-center font-medium text-amber-800" data-dd-right="${ddData.indexOf(d)}" onclick="ddSelectRight(${ddData.indexOf(d)})">${d.right}</div>`).join('')}</div>
+            `;
+        }
+
+        function ddSelectLeft(idx) {
+            document.querySelectorAll('[data-dd-left]').forEach(el => el.classList.remove('selected'));
+            const el = document.querySelector(`[data-dd-left="${idx}"]`);
+            if (el.classList.contains('matched')) return;
+            el.classList.add('selected');
+            ddSelected = idx;
+        }
+
+        function ddSelectRight(idx) {
+            if (ddSelected === null) return;
+            const rightEl = document.querySelector(`[data-dd-right="${idx}"]`);
+            const leftEl = document.querySelector(`[data-dd-left="${ddSelected}"]`);
+            if (rightEl.classList.contains('matched')) return;
+            if (ddSelected === idx) {
+                leftEl.classList.remove('selected');
+                leftEl.classList.add('matched');
+                rightEl.classList.add('matched');
+                ddMatched++;
+                if (ddMatched === ddData.length) {
+                    document.getElementById('dd-feedback').innerHTML = '<span class="text-emerald-600">🎉 Semua cocok! Kamu hebat!</span>';
+                }
+            } else {
+                rightEl.classList.add('wrong-match');
+                leftEl.classList.add('wrong-match');
+                setTimeout(() => {
+                    rightEl.classList.remove('wrong-match');
+                    leftEl.classList.remove('wrong-match');
+                    leftEl.classList.remove('selected');
+                }, 600);
+            }
+            ddSelected = null;
+        }
+
+        // ========== CASE STUDY QUIZ ==========
+        const csData = [
+            { scenario: "Rina tidak sengaja menumpahkan air ke buku Ahmad. Ahmad tidak marah dan berkata: 'Tidak apa-apa, lain kali hati-hati ya.' Ahmad sedang meneladani sifat...", options: ["Al-Halīm","Asy-Syakūr","Al-Hakīm","Al-Wadūd"], answer: 0, explanation: "Ahmad menahan amarah dan bersabar — ini meneladani sifat Al-Halīm (Maha Penyabar)." },
+            { scenario: "Setelah mendapat nilai bagus, Siti langsung mengucapkan 'Alhamdulillah' dan berterima kasih kepada gurunya yang sudah mengajar dengan sabar. Siti meneladani sifat...", options: ["Al-Halīm","Asy-Syakūr","Al-Hakīm","Al-Wadūd"], answer: 1, explanation: "Siti bersyukur atas nikmat dan menghargai kebaikan orang lain — meneladani Asy-Syakūr (Maha Berterima Kasih)." },
+            { scenario: "Budi ingin membeli mainan baru, tapi ia memilih menabung uangnya untuk membeli buku pelajaran yang lebih bermanfaat. Budi meneladani sifat...", options: ["Al-Halīm","Asy-Syakūr","Al-Hakīm","Al-Wadūd"], answer: 2, explanation: "Budi membuat keputusan bijak dengan mempertimbangkan manfaat jangka panjang — meneladani Al-Hakīm (Maha Bijaksana)." }
+        ];
+        let csIndex = 0;
+
+        function initCaseStudy() {
+            csIndex = 0;
+            renderCS();
+        }
+
+        function renderCS() {
+            const container = document.getElementById('cs-container');
+            if (csIndex >= csData.length) {
+                container.innerHTML = '<div class="card-material text-center"><p class="text-2xl mb-2">🎉</p><p class="font-bold text-lg text-emerald-700">Semua studi kasus selesai!</p></div>';
+                return;
+            }
+            const cs = csData[csIndex];
+            container.innerHTML = `
+                <div class="card-material">
+                    <div class="flex items-center gap-2 mb-4"><span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-bold">Kasus ${csIndex+1}/${csData.length}</span></div>
+                    <p class="text-lg text-gray-800 mb-6 leading-relaxed">${cs.scenario}</p>
+                    <div class="grid grid-cols-2 gap-3" id="cs-options">
+                        ${cs.options.map((opt,i) => `<button class="bs-option p-4 rounded-xl bg-gray-50 border-2 border-gray-200 font-medium text-gray-700 text-left" onclick="answerCS(${i})">${opt}</button>`).join('')}
+                    </div>
+                    <div id="cs-explanation" class="hidden mt-6 p-4 rounded-xl bg-blue-50 border-l-4 border-blue-400 text-gray-700"></div>
+                </div>
+            `;
+        }
+
+        function answerCS(idx) {
+            const cs = csData[csIndex];
+            const btns = document.querySelectorAll('#cs-options button');
+            btns.forEach((b,i) => {
+                b.disabled = true;
+                if (i === cs.answer) { b.classList.add('correct-flash'); b.style.borderColor = '#22c55e'; b.style.background = '#f0fdf4'; }
+                else if (i === idx && idx !== cs.answer) { b.classList.add('wrong-flash'); b.style.borderColor = '#ef4444'; b.style.background = '#fef2f2'; }
+            });
+            const expl = document.getElementById('cs-explanation');
+            expl.classList.remove('hidden');
+            expl.innerHTML = `<strong>${idx === cs.answer ? '✅ Benar!' : '❌ Kurang tepat.'}</strong> ${cs.explanation}`;
+            setTimeout(() => { csIndex++; renderCS(); }, 3000);
+        }
+
+        // ========== SHORT ANSWER QUIZ ==========
+        const saData = [
+            { question: "Al-Halīm berarti Allah Maha ____.", answers: ["penyabar", "penyantun"] },
+            { question: "Asy-Syakūr berarti Allah Maha ____ kebaikan hamba-Nya.", answers: ["mensyukuri", "berterima kasih"] },
+            { question: "Al-Hakīm berarti Allah Maha ____.", answers: ["bijaksana"] },
+            { question: "Al-Wadūd berarti Allah Maha ____.", answers: ["pencinta", "mengasihi"] },
+            { question: "Sikap berterima kasih atas nikmat Allah disebut ____.", answers: ["syukur", "bersyukur"] }
+        ];
+        let saIndex = 0;
+        function initShortAnswer() { saIndex = 0; renderShortAnswer(); }
+        function renderShortAnswer() {
+            const container = document.getElementById('sa-container');
+            if (saIndex >= saData.length) { container.innerHTML = '<div class="card-material text-center"><p class="font-bold text-lg text-emerald-700">🎉 Semua isian selesai!</p></div>'; return; }
+            const item = saData[saIndex];
+            container.innerHTML = `<div class="card-material"><div class="mb-4 font-bold text-emerald-700">Soal ${saIndex + 1}/5</div><p class="text-lg text-gray-800 mb-5">${item.question}</p><form onsubmit="answerShortAnswer(event)"><label for="short-answer-input" class="sr-only">Jawaban singkat</label><input id="short-answer-input" required autocomplete="off" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 mb-4" placeholder="Ketik jawabanmu..."><button type="submit" class="w-full py-3 rounded-xl bg-emerald-600 text-white font-bold">Periksa Jawaban</button></form><div id="sa-feedback" class="hidden mt-5 p-4 rounded-xl bg-blue-50 text-gray-700"></div></div>`;
+        }
+        function answerShortAnswer(event) {
+            event.preventDefault();
+            const input = document.getElementById('short-answer-input');
+            const answer = input.value.trim().toLowerCase();
+            const correct = saData[saIndex].answers.includes(answer);
+            input.disabled = true;
+            document.querySelector('#sa-container button').disabled = true;
+            const feedback = document.getElementById('sa-feedback');
+            feedback.classList.remove('hidden');
+            feedback.innerHTML = `<strong>${correct ? '✅ Benar!' : '❌ Belum tepat.'}</strong> Jawaban yang tepat: ${saData[saIndex].answers[0]}.`;
+            setTimeout(() => { saIndex++; renderShortAnswer(); }, 2200);
+        }
+
+        // ========== TRUE/FALSE QUIZ ==========
+        const tfData = [
+            { statement: "Al-Halīm berarti Allah tidak mampu menghukum hamba-Nya yang berdosa.", answer: false, explanation: "SALAH. Al-Halīm bukan berarti Allah tidak mampu menghukum, melainkan Allah memilih untuk menunda hukuman dan memberi kesempatan bertaubat karena kasih sayang-Nya." },
+            { statement: "Asy-Syakūr berarti Allah membalas kebaikan hamba-Nya dengan pahala yang berlipat ganda.", answer: true, explanation: "BENAR. Allah Asy-Syakūr membalas amal kebaikan sekecil apa pun dengan pahala yang berlipat ganda, bahkan melebihi apa yang pantas diterima." },
+            { statement: "Al-Wadūd hanya berarti Allah mencintai, tetapi tidak berarti Allah dicintai oleh hamba-Nya.", answer: false, explanation: "SALAH. Al-Wadūd bermakna dua arah: Allah Maha Mencintai hamba-Nya DAN Maha Dicintai oleh hamba-hamba-Nya yang beriman." },
+            { statement: "Al-Hakīm mengajarkan kita untuk berpikir bijak sebelum bertindak.", answer: true, explanation: "BENAR. Meneladani Al-Hakīm berarti mengambil keputusan dengan pertimbangan yang baik." },
+            { statement: "Bersyukur hanya perlu dilakukan ketika mendapat hadiah besar.", answer: false, explanation: "SALAH. Kita perlu bersyukur atas setiap nikmat, termasuk nikmat kecil setiap hari." }
+        ];
+        let tfIndex = 0;
+
+        function initTrueFalse() {
+            tfIndex = 0;
+            renderTF();
+        }
+
+        function renderTF() {
+            const container = document.getElementById('tf-container');
+            if (tfIndex >= tfData.length) {
+                container.innerHTML = '<div class="card-material text-center"><p class="text-2xl mb-2">🎉</p><p class="font-bold text-lg text-emerald-700">Semua pernyataan selesai!</p></div>';
+                return;
+            }
+            const tf = tfData[tfIndex];
+            container.innerHTML = `
+                <div class="card-material">
+                    <div class="flex items-center gap-2 mb-4"><span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-bold">Pernyataan ${tfIndex+1}/${tfData.length}</span></div>
+                    <p class="text-lg text-gray-800 mb-6 leading-relaxed font-medium">"${tf.statement}"</p>
+                    <div class="flex gap-4" id="tf-buttons">
+                        <button onclick="answerTF(true)" class="flex-1 py-4 rounded-xl bg-emerald-50 border-2 border-emerald-200 font-bold text-emerald-700 text-lg hover:bg-emerald-100 transition">✅ BENAR</button>
+                        <button onclick="answerTF(false)" class="flex-1 py-4 rounded-xl bg-red-50 border-2 border-red-200 font-bold text-red-700 text-lg hover:bg-red-100 transition">❌ SALAH</button>
+                    </div>
+                    <div id="tf-explanation" class="hidden mt-6 p-4 rounded-xl bg-blue-50 border-l-4 border-blue-400 text-gray-700"></div>
+                </div>
+            `;
+        }
+
+        function answerTF(val) {
+            const tf = tfData[tfIndex];
+            const btns = document.querySelectorAll('#tf-buttons button');
+            btns.forEach(b => b.disabled = true);
+            const correct = val === tf.answer;
+            const expl = document.getElementById('tf-explanation');
+            expl.classList.remove('hidden');
+            expl.innerHTML = `<strong>${correct ? '✅ Jawaban kamu benar!' : '❌ Jawaban kamu kurang tepat.'}</strong><br>${tf.explanation}`;
+            setTimeout(() => { tfIndex++; renderTF(); }, 3500);
+        }
+
+        // ========== RESET ==========
+        function resetQuiz() {
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('quiz-game').classList.add('hidden');
+            document.getElementById('quiz-setup').classList.add('hidden');
+            document.getElementById('quiz-dragdrop').classList.add('hidden');
+            document.getElementById('quiz-shortanswer').classList.add('hidden');
+            document.getElementById('quiz-truefalse').classList.add('hidden');
+            document.getElementById('quiz-type-select').classList.remove('hidden');
+        }
+
+        // ========== DATA SDK ==========
+        let allScores = [];
+        const dataHandler = {
+            onDataChanged(data) {
+                allScores = data;
+                renderScoreboard();
+            }
+        };
+
+        function renderScoreboard() {
+            const container = document.getElementById('score-list');
+            const emptyMsg = container.querySelector('[data-template-id="skor-empty"]');
+            if (allScores.length === 0) { if(emptyMsg) emptyMsg.classList.remove('hidden'); return; }
+            if(emptyMsg) emptyMsg.classList.add('hidden');
+            [...container.children].forEach(c => { if(!c.hasAttribute('data-template-id')) c.remove(); });
+            const sorted = [...allScores].sort((a,b) => (b.score||0) - (a.score||0));
+            sorted.slice(0, 20).forEach((row, i) => {
+                let el = container.querySelector(`[data-row-id="${row.__backendId}"]`);
+                if (!el) {
+                    el = document.createElement('div');
+                    el.setAttribute('data-row-id', row.__backendId);
+                    el.className = 'flex items-center justify-between bg-white rounded-lg px-5 py-3 shadow-sm';
+                    container.appendChild(el);
+                }
+                const colorBadge = { red:'bg-red-500', blue:'bg-blue-500', green:'bg-green-500', yellow:'bg-yellow-400' };
+                el.innerHTML = `<div class="flex items-center gap-3"><span class="font-bold text-gray-500 w-6">${i+1}</span><span class="w-4 h-4 rounded-full ${colorBadge[row.zone_color]||'bg-gray-300'}"></span><span class="font-medium">${row.player_name}</span></div><span class="font-bold text-emerald-600">${row.score} poin</span>`;
+            });
+        }
+
+        (async function() {
+            const res = await window.dataSdk.init(dataHandler);
+            if (!res.isOk) { /* silent */ }
+        })();
+
+        lucide.createIcons();
+    </script>
+ </body>
+</html>
