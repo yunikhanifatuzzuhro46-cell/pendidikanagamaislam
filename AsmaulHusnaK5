@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="id">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261006-00-8f0390a","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Sarabun":"YAFdJssSnME,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Media Pembelajaran Asmaul Husna</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+  <style>
+*{box-sizing:border-box}body{margin:0;font-family:"DM Sans",sans-serif;color:#374151}h1,h2{font-family:"Playfair Display",serif}.app-shell{min-height:calc(100 * min(var(--vh,1vh),1vh))}.sidebar-panel{background:linear-gradient(180deg,#1e3a5f,#0f2027)}.nav-item{color:#fff;transition:background .2s,transform .2s}.nav-item:hover,.nav-item.active{background:#ffffff24;transform:translateX(4px)}.material-card{background:linear-gradient(135deg,#fff,#fff7ed);border:2px solid #fbbf243d;border-radius:22px;box-shadow:0 10px 30px #1e3a5f1f}.topic-card{transition:transform .2s}.topic-card:hover{transform:translateY(-4px)}.arabic{font-size:36px;line-height:2;direction:rtl}.hidden,[hidden]{display:none!important}button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid #fbbf24;outline-offset:3px}button:disabled{opacity:.55;cursor:not-allowed}.primary{background:#059669;color:#fff;font-weight:700;border-radius:12px;padding:12px 20px}.option{border:2px solid #e2e8f0;border-radius:12px;padding:12px;background:#fff}.option.correct{border-color:#059669;background:#ecfdf5}.player-panel{border:2px solid var(--zone);border-top-width:6px;border-radius:16px;padding:18px;background:#fff}.pick{border:2px solid #e2e8f0;border-radius:10px;padding:12px;flex:1;font-weight:700}.pick.chosen{border-color:var(--zone);box-shadow:0 0 0 1px var(--zone)}.drag-card{cursor:grab;border:2px solid #cbd5e1;background:#fff;border-radius:12px;padding:12px 16px;font-weight:700;touch-action:none}.drag-card.selected{border-color:#047857;background:#ecfdf5}.drop-zone{min-height:68px;border:2px dashed #94a3b8;border-radius:12px;padding:10px;background:#fff;display:flex;align-items:center;flex-wrap:wrap}.drop-zone.over,.drop-zone.good{border-color:#059669;background:#ecfdf5}.drop-zone.bad{border-color:#be123c;background:#fff1f2}.page-section{animation:rise .35s ease-out}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@media(max-width:768px){.app-shell{display:block}.sidebar-panel{width:100%}.nav-scroll{display:flex;overflow:auto;gap:4px}.nav-item{white-space:nowrap;width:auto!important}main{padding:20px!important}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" type="text/javascript" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <script src="/_sdk/1473331b860cdf5c.editing_sdk.js" type="text/javascript" integrity="sha512-zd/WiNJmdX2rRMgSDon0ny7eSp9O1vzGBXvBfGBu3AbU02LcUa3u+AcBTlNj+As6xOR2OKa6lFg023tgHMv5KQ=="></script>
+  <script src="/_sdk/ab4336f91e694f96.resizing_sdk.js" type="text/javascript" integrity="sha512-cxmeUrBrNlwwLr+tEu/iwM5F3boeK4qDMoH3QjUPqJptkO5NkaDVhQvyIHIn+3EflI5/uubWzkSA78B1tCswgA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full">
+  <div class="app-shell w-full flex">
+   <aside data-template-id="sidebar" class="canva-sidebar sidebar-panel w-72 shrink-0 p-6">
+    <header class="mb-7">
+     <h1 data-template-id="app-title" class="canva-text mb-2"></h1>
+     <p data-template-id="app-subtitle" class="canva-text"></p>
+    </header>
+    <nav aria-label="Navigasi pembelajaran" class="nav-scroll space-y-1"><button type="button" data-go="home" class="nav-item active w-full rounded-lg p-3 text-left" aria-current="page"><span data-template-id="nav-home" class="canva-text"></span></button> <button type="button" data-go="syakur" class="nav-item w-full rounded-lg p-3 text-left"><span data-template-id="nav-syakur" class="canva-text"></span></button> <button type="button" data-go="halim" class="nav-item w-full rounded-lg p-3 text-left"><span data-template-id="nav-halim" class="canva-text"></span></button> <button type="button" data-go="hakim" class="nav-item w-full rounded-lg p-3 text-left"><span data-template-id="nav-hakim" class="canva-text"></span></button> <button type="button" data-go="wadud" class="nav-item w-full rounded-lg p-3 text-left"><span data-template-id="nav-wadud" class="canva-text"></span></button> <button type="button" data-go="quiz" class="nav-item w-full rounded-lg p-3 text-left"><span data-template-id="nav-quiz" class="canva-text"></span></button> <button type="button" data-go="scores" class="nav-item w-full rounded-lg p-3 text-left"><span data-template-id="nav-scores" class="canva-text"></span></button>
+    </nav>
+   </aside>
+   <main class="flex-1 min-w-0 p-8">
+    <section id="home" class="page-section">
+     <div class="relative rounded-2xl overflow-hidden h-80 mb-6">
+      <img data-template-id="hero-image" class="canva-image w-full h-full object-cover" loading="lazy">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/30 to-transparent flex items-end p-7">
+       <div>
+        <h2 data-template-id="hero-title" class="canva-text mb-3"></h2>
+        <p data-template-id="hero-description" class="canva-text max-w-2xl"></p>
+       </div>
+      </div>
+     </div>
+     <div class="grid sm:grid-cols-2 gap-4"><button type="button" data-go="syakur" data-template-id="card-syakur" class="canva-card topic-card p-6 rounded-2xl text-center"><h3 data-template-id="card-syakur-title" class="canva-text"></h3><p data-template-id="card-syakur-desc" class="canva-text mt-2"></p></button> <button type="button" data-go="halim" data-template-id="card-halim" class="canva-card topic-card p-6 rounded-2xl text-center"><h3 data-template-id="card-halim-title" class="canva-text"></h3><p data-template-id="card-halim-desc" class="canva-text mt-2"></p></button> <button type="button" data-go="hakim" data-template-id="card-hakim" class="canva-card topic-card p-6 rounded-2xl text-center"><h3 data-template-id="card-hakim-title" class="canva-text"></h3><p data-template-id="card-hakim-desc" class="canva-text mt-2"></p></button> <button type="button" data-go="wadud" data-template-id="card-wadud" class="canva-card topic-card p-6 rounded-2xl text-center"><h3 data-template-id="card-wadud-title" class="canva-text"></h3><p data-template-id="card-wadud-desc" class="canva-text mt-2"></p></button>
+     </div>
+    </section>
+    <section id="syakur" class="page-section hidden">
+     <article class="material-card max-w-4xl mx-auto p-7">
+      <h2 data-template-id="syakur-title" class="canva-text"></h2>
+      <p data-template-id="syakur-arabic" lang="ar" class="canva-text arabic text-center my-3"></p><img data-template-id="syakur-image" class="canva-image w-full h-52 object-cover rounded-xl mb-6" loading="lazy">
+      <p data-template-id="syakur-meaning" class="canva-text leading-relaxed"></p>
+      <h3 data-template-id="syakur-detail-title" class="canva-text mt-5 mb-2"></h3>
+      <p data-template-id="syakur-detail" class="canva-text leading-relaxed"></p>
+      <p data-template-id="syakur-practice" class="canva-text leading-relaxed mt-3"></p>
+      <p data-template-id="syakur-verse" lang="ar" dir="rtl" class="canva-text text-center p-4 rounded-xl mb-2"></p>
+      <p data-template-id="syakur-reference" class="canva-text p-5 rounded-xl my-5"></p>
+      <h3 data-template-id="syakur-example-title" class="canva-text mb-2"></h3>
+      <p data-template-id="syakur-example" class="canva-text"></p>
+     </article>
+    </section>
+    <section id="halim" class="page-section hidden">
+     <article class="material-card max-w-4xl mx-auto p-7">
+      <h2 data-template-id="halim-title" class="canva-text"></h2>
+      <p data-template-id="halim-arabic" lang="ar" class="canva-text arabic text-center my-3"></p><img data-template-id="halim-image" class="canva-image w-full h-52 object-cover rounded-xl mb-6" loading="lazy">
+      <p data-template-id="halim-meaning" class="canva-text leading-relaxed"></p>
+      <h3 data-template-id="halim-detail-title" class="canva-text mt-5 mb-2"></h3>
+      <p data-template-id="halim-detail" class="canva-text leading-relaxed"></p>
+      <p data-template-id="halim-practice" class="canva-text leading-relaxed mt-3"></p>
+      <p data-template-id="halim-verse" lang="ar" dir="rtl" class="canva-text text-center p-4 rounded-xl mb-2"></p>
+      <p data-template-id="halim-reference" class="canva-text p-5 rounded-xl my-5"></p>
+      <h3 data-template-id="halim-example-title" class="canva-text mb-2"></h3>
+      <p data-template-id="halim-example" class="canva-text"></p>
+     </article>
+    </section>
+    <section id="hakim" class="page-section hidden">
+     <article class="material-card max-w-4xl mx-auto p-7">
+      <h2 data-template-id="hakim-title" class="canva-text"></h2>
+      <p data-template-id="hakim-arabic" lang="ar" class="canva-text arabic text-center my-3"></p><img data-template-id="hakim-image" class="canva-image w-full h-52 object-cover rounded-xl mb-6" loading="lazy">
+      <p data-template-id="hakim-meaning" class="canva-text leading-relaxed"></p>
+      <h3 data-template-id="hakim-detail-title" class="canva-text mt-5 mb-2"></h3>
+      <p data-template-id="hakim-detail" class="canva-text leading-relaxed"></p>
+      <p data-template-id="hakim-practice" class="canva-text leading-relaxed mt-3"></p>
+      <p data-template-id="hakim-verse" lang="ar" dir="rtl" class="canva-text text-center p-4 rounded-xl mb-2"></p>
+      <p data-template-id="hakim-reference" class="canva-text p-5 rounded-xl my-5"></p>
+      <h3 data-template-id="hakim-example-title" class="canva-text mb-2"></h3>
+      <p data-template-id="hakim-example" class="canva-text"></p>
+     </article>
+    </section>
+    <section id="wadud" class="page-section hidden">
+     <article class="material-card max-w-4xl mx-auto p-7">
+      <h2 data-template-id="wadud-title" class="canva-text"></h2>
+      <p data-template-id="wadud-arabic" lang="ar" class="canva-text arabic text-center my-3"></p><img data-template-id="wadud-image" class="canva-image w-full h-52 object-cover rounded-xl mb-6" loading="lazy">
+      <p data-template-id="wadud-meaning" class="canva-text leading-relaxed"></p>
+      <h3 data-template-id="wadud-detail-title" class="canva-text mt-5 mb-2"></h3>
+      <p data-template-id="wadud-detail" class="canva-text leading-relaxed"></p>
+      <p data-template-id="wadud-practice" class="canva-text leading-relaxed mt-3"></p>
+      <p data-template-id="wadud-verse" lang="ar" dir="rtl" class="canva-text text-center p-4 rounded-xl mb-2"></p>
+      <p data-template-id="wadud-reference" class="canva-text p-5 rounded-xl my-5"></p>
+      <h3 data-template-id="wadud-example-title" class="canva-text mb-2"></h3>
+      <p data-template-id="wadud-example" class="canva-text"></p>
+     </article>
+    </section>
+    <section id="quiz" class="page-section hidden">
+     <header class="text-center mb-6">
+      <h2 data-template-id="quiz-title" class="canva-text mb-2"></h2>
+      <p data-template-id="quiz-description" class="canva-text"></p><button type="button" data-go="home" data-template-id="quiz-home-button" class="canva-button primary mt-4">Home</button>
+     </header>
+     <div id="quiz-menu" class="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+      <button id="solo" type="button" data-template-id="solo-button" class="canva-button material-card p-6"></button><button id="multi" type="button" data-template-id="multi-button" class="canva-button material-card p-6"></button>
+     </div>
+     <form id="setup" class="hidden material-card max-w-2xl mx-auto p-7">
+      <h3 data-template-id="setup-title" class="canva-text mb-3"></h3>
+      <p data-template-id="setup-description" class="canva-text mb-5"></p>
+      <div class="grid sm:grid-cols-2 gap-4">
+       <div>
+        <label for="p0" data-template-id="label-red" class="canva-text block mb-2"></label><input id="p0" maxlength="40" class="w-full border rounded-lg p-3">
+       </div>
+       <div>
+        <label for="p1" data-template-id="label-blue" class="canva-text block mb-2"></label><input id="p1" maxlength="40" class="w-full border rounded-lg p-3">
+       </div>
+       <div>
+        <label for="p2" data-template-id="label-green" class="canva-text block mb-2"></label><input id="p2" maxlength="40" class="w-full border rounded-lg p-3">
+       </div>
+       <div>
+        <label for="p3" data-template-id="label-yellow" class="canva-text block mb-2"></label><input id="p3" maxlength="40" class="w-full border rounded-lg p-3">
+       </div>
+      </div><button data-template-id="start-button" class="canva-button primary mt-6 w-full" type="submit"></button>
+     </form>
+     <div id="game" class="hidden max-w-5xl mx-auto">
+      <div id="multiple-stage">
+       <button type="button" data-quiz-menu="true" data-template-id="multiple-menu-button" class="canva-button primary mb-4">Kembali ke Menu Kuis</button>
+       <div class="material-card p-6 mb-5">
+        <p id="progress" class="font-bold mb-3" aria-live="polite"></p>
+        <div class="question">
+         <h3 data-template-id="q1" class="canva-text mb-5"></h3>
+         <div class="grid gap-2">
+          <div class="option flex gap-3">
+           <b aria-hidden="true">A</b>
+           <p data-template-id="q1-a" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3">
+           <b aria-hidden="true">B</b>
+           <p data-template-id="q1-b" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3">
+           <b aria-hidden="true">C</b>
+           <p data-template-id="q1-c" class="canva-text"></p>
+          </div>
+         </div>
+        </div>
+        <div class="question hidden">
+         <h3 data-template-id="q2" class="canva-text mb-5"></h3>
+         <div class="grid gap-2">
+          <div class="option flex gap-3">
+           <b aria-hidden="true">A</b>
+           <p data-template-id="q2-a" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3">
+           <b aria-hidden="true">B</b>
+           <p data-template-id="q2-b" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3">
+           <b aria-hidden="true">C</b>
+           <p data-template-id="q2-c" class="canva-text"></p>
+          </div>
+         </div>
+        </div>
+        <div class="question hidden">
+         <h3 data-template-id="q3" class="canva-text mb-5"></h3>
+         <div class="grid gap-2">
+          <div class="option flex gap-3">
+           <b aria-hidden="true">A</b>
+           <p data-template-id="q3-a" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3">
+           <b aria-hidden="true">B</b>
+           <p data-template-id="q3-b" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3">
+           <b aria-hidden="true">C</b>
+           <p data-template-id="q3-c" class="canva-text"></p>
+          </div>
+         </div>
+        </div>
+        <div class="question hidden">
+         <h3 data-template-id="q4" class="canva-text mb-5"></h3>
+         <div class="grid gap-2">
+          <div class="option flex gap-3">
+           <b aria-hidden="true">A</b>
+           <p data-template-id="q4-a" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3">
+           <b aria-hidden="true">B</b>
+           <p data-template-id="q4-b" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3">
+           <b aria-hidden="true">C</b>
+           <p data-template-id="q4-c" class="canva-text"></p>
+          </div>
+         </div>
+        </div>
+        <div class="question hidden">
+         <h3 data-template-id="q5" class="canva-text mb-5"></h3>
+         <div class="grid gap-2">
+          <div class="option flex gap-3"><b aria-hidden="true">A</b>
+           <p data-template-id="q5-a" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">B</b>
+           <p data-template-id="q5-b" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">C</b>
+           <p data-template-id="q5-c" class="canva-text"></p>
+          </div>
+         </div>
+        </div>
+        <div class="question hidden">
+         <h3 data-template-id="q6" class="canva-text mb-5"></h3>
+         <div class="grid gap-2">
+          <div class="option flex gap-3"><b aria-hidden="true">A</b>
+           <p data-template-id="q6-a" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">B</b>
+           <p data-template-id="q6-b" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">C</b>
+           <p data-template-id="q6-c" class="canva-text"></p>
+          </div>
+         </div>
+        </div>
+        <div class="question hidden">
+         <h3 data-template-id="q7" class="canva-text mb-5"></h3>
+         <div class="grid gap-2">
+          <div class="option flex gap-3"><b aria-hidden="true">A</b>
+           <p data-template-id="q7-a" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">B</b>
+           <p data-template-id="q7-b" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">C</b>
+           <p data-template-id="q7-c" class="canva-text"></p>
+          </div>
+         </div>
+        </div>
+        <div class="question hidden">
+         <h3 data-template-id="q8" class="canva-text mb-5"></h3>
+         <div class="grid gap-2">
+          <div class="option flex gap-3"><b aria-hidden="true">A</b>
+           <p data-template-id="q8-a" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">B</b>
+           <p data-template-id="q8-b" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">C</b>
+           <p data-template-id="q8-c" class="canva-text"></p>
+          </div>
+         </div>
+        </div>
+        <div class="question hidden">
+         <h3 data-template-id="q9" class="canva-text mb-5"></h3>
+         <div class="grid gap-2">
+          <div class="option flex gap-3"><b aria-hidden="true">A</b>
+           <p data-template-id="q9-a" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">B</b>
+           <p data-template-id="q9-b" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">C</b>
+           <p data-template-id="q9-c" class="canva-text"></p>
+          </div>
+         </div>
+        </div>
+        <div class="question hidden">
+         <h3 data-template-id="q10" class="canva-text mb-5"></h3>
+         <div class="grid gap-2">
+          <div class="option flex gap-3"><b aria-hidden="true">A</b>
+           <p data-template-id="q10-a" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">B</b>
+           <p data-template-id="q10-b" class="canva-text"></p>
+          </div>
+          <div class="option flex gap-3"><b aria-hidden="true">C</b>
+           <p data-template-id="q10-c" class="canva-text"></p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <p data-template-id="play-instruction" class="canva-text mb-4"></p>
+       <div id="player-list" class="grid sm:grid-cols-2 gap-4"></div>
+       <div class="flex flex-wrap items-center justify-between gap-4 mt-5">
+        <p id="answered-count" aria-live="polite"></p><button id="next" type="button" data-template-id="next-button" class="canva-button primary" disabled></button>
+       </div>
+      </div>
+      <div id="matching-stage" class="hidden material-card p-6">
+       <button type="button" data-quiz-menu="true" data-template-id="matching-menu-button" class="canva-button primary mb-4">Kembali ke Menu Kuis</button>
+       <p id="match-turn" class="font-bold mb-3" aria-live="polite"></p>
+       <h3 data-template-id="match-title" class="canva-text mb-2"></h3>
+       <p data-template-id="match-help" class="canva-text mb-5"></p>
+       <div id="card-bank" class="flex flex-wrap gap-3 mb-6" aria-label="Kartu nama">
+        <button type="button" draggable="true" data-match="wadud" data-template-id="match-wadud" class="canva-button drag-card"></button><button type="button" draggable="true" data-match="hakim" data-template-id="match-hakim" class="canva-button drag-card"></button><button type="button" draggable="true" data-match="syakur" data-template-id="match-syakur" class="canva-button drag-card"></button><button type="button" draggable="true" data-match="halim" data-template-id="match-halim" class="canva-button drag-card"></button>
+       </div>
+       <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+         <p data-template-id="meaning-syakur" class="canva-text font-semibold mb-2"></p>
+         <div class="drop-zone" data-target="syakur" role="button" tabindex="0" aria-label="Tempatkan nama untuk Maha Menghargai"></div>
+        </div>
+        <div>
+         <p data-template-id="meaning-halim" class="canva-text font-semibold mb-2"></p>
+         <div class="drop-zone" data-target="halim" role="button" tabindex="0" aria-label="Tempatkan nama untuk Maha Penyantun"></div>
+        </div>
+        <div>
+         <p data-template-id="meaning-hakim" class="canva-text font-semibold mb-2"></p>
+         <div class="drop-zone" data-target="hakim" role="button" tabindex="0" aria-label="Tempatkan nama untuk Maha Bijaksana"></div>
+        </div>
+        <div>
+         <p data-template-id="meaning-wadud" class="canva-text font-semibold mb-2"></p>
+         <div class="drop-zone" data-target="wadud" role="button" tabindex="0" aria-label="Tempatkan nama untuk Maha Mencintai"></div>
+        </div>
+       </div>
+       <p id="match-feedback" class="mt-5 font-semibold" role="status"></p>
+       <div class="flex flex-wrap gap-3 mt-4">
+        <button id="check-match" type="button" data-template-id="check-match-button" class="canva-button primary"></button><button id="match-next" type="button" data-template-id="match-next-button" class="canva-button primary hidden"></button>
+       </div>
+      </div>
+      <form id="short-stage" class="hidden material-card p-6">
+       <button type="button" data-quiz-menu="true" data-template-id="short-menu-button" class="canva-button primary mb-4">Kembali ke Menu Kuis</button>
+       <p id="short-turn" class="font-bold mb-3" aria-live="polite"></p>
+       <h3 data-template-id="short-title" class="canva-text mb-2"></h3>
+       <p data-template-id="short-help" class="canva-text mb-5"></p>
+       <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+         <label for="short-0" data-template-id="short-label-0" class="canva-text block mb-2"></label><input id="short-0" autocomplete="off" required class="w-full border rounded-lg p-3">
+        </div>
+        <div>
+         <label for="short-1" data-template-id="short-label-1" class="canva-text block mb-2"></label><input id="short-1" autocomplete="off" required class="w-full border rounded-lg p-3">
+        </div>
+        <div>
+         <label for="short-2" data-template-id="short-label-2" class="canva-text block mb-2"></label><input id="short-2" autocomplete="off" required class="w-full border rounded-lg p-3">
+        </div>
+        <div>
+         <label for="short-3" data-template-id="short-label-3" class="canva-text block mb-2"></label><input id="short-3" autocomplete="off" required class="w-full border rounded-lg p-3">
+        </div>
+       </div>
+       <p id="short-feedback" class="mt-5 font-semibold" role="status"></p><button type="submit" data-template-id="check-short-button" class="canva-button primary mt-4"></button><button id="short-next" type="button" data-template-id="short-next-button" class="canva-button primary mt-4 hidden"></button>
+      </form>
+     </div>
+     <div id="results" class="hidden material-card max-w-3xl mx-auto p-7 text-center">
+      <img data-template-id="trophy-image" class="canva-image w-28 h-28 rounded-full object-cover mx-auto mb-4" loading="lazy">
+      <h3 data-template-id="result-title" class="canva-text mb-2"></h3>
+      <p id="result-note" class="mb-4" aria-live="polite"></p>
+      <div id="result-list" class="space-y-3"></div><button id="restart" type="button" data-template-id="restart-button" class="canva-button primary mt-5"></button>
+     </div>
+    </section>
+    <section id="scores" class="page-section hidden">
+     <h2 data-template-id="score-title" class="canva-text mb-6"></h2>
+     <div class="max-w-3xl mx-auto">
+      <p id="loading" data-template-id="loading-text" class="canva-text p-4"></p>
+      <p id="load-error" data-template-id="load-error-text" class="canva-text hidden p-4" role="status"></p><button id="retry" type="button" data-template-id="retry-button" class="canva-button primary hidden mb-4"></button>
+      <p id="empty" data-template-id="empty-text" class="canva-text hidden p-4"></p>
+      <p id="capacity" class="mb-4" aria-live="polite"></p>
+      <div id="score-list" class="space-y-3"></div>
+     </div>
+    </section>
+    <footer class="mt-10 border-t border-slate-300/70 pt-5 text-center">
+     <p data-template-id="footer-text" class="canva-text"></p>
+     <p data-template-id="developer-credit" class="canva-text mt-2"></p>
+    </footer>
+   </main>
+  </div>
+  <template id="player-template">
+   <article data-template-id="player-panel" class="canva-panel player-panel">
+    <div class="flex justify-between gap-3 mb-3">
+     <h3 data-template-id="player-name" class="canva-text"></h3><span data-template-id="player-score" class="canva-text"></span>
+    </div>
+    <div class="flex gap-3">
+     <button type="button" data-choice="0" data-template-id="pick-a" class="canva-button pick" aria-label="Jawaban A" aria-pressed="false"></button><button type="button" data-choice="1" data-template-id="pick-b" class="canva-button pick" aria-label="Jawaban B" aria-pressed="false"></button><button type="button" data-choice="2" data-template-id="pick-c" class="canva-button pick" aria-label="Jawaban C" aria-pressed="false"></button>
+    </div>
+    <div class="mt-3" aria-live="polite">
+     <p data-template-id="waiting-text" class="canva-text waiting"></p>
+     <p data-template-id="locked-text" class="canva-text locked hidden"></p>
+     <p data-template-id="correct-text" class="canva-text right hidden"></p>
+     <p data-template-id="incorrect-text" class="canva-text wrong hidden"></p>
+    </div>
+   </article>
+  </template>
+  <template id="result-template">
+   <div data-template-id="result-row" class="canva-card rounded-xl p-4 text-left">
+    <p data-template-id="result-value" class="canva-text"></p><button type="button" data-template-id="save-button" class="canva-button save rounded-lg px-4 py-2 mt-3"></button><span data-template-id="saving-text" class="canva-text saving hidden ml-2"></span>
+    <p data-template-id="saved-text" class="canva-text saved hidden mt-2" role="status"></p>
+    <p data-template-id="save-error-text" class="canva-text error hidden mt-2" role="status"></p>
+    <p data-template-id="limit-text" class="canva-text limit hidden mt-2" role="status"></p>
+   </div>
+  </template>
+  <template id="score-template">
+   <div data-template-id="score-row" class="canva-card flex justify-between gap-4 rounded-xl p-4">
+    <span data-template-id="score-name" class="canva-text"></span><span data-template-id="score-value" class="canva-text"></span>
+   </div>
+  </template>
+  <script>
+const $=id=>document.getElementById(id);
+document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('main>section').forEach(s=>s.classList.toggle('hidden',s.id!==b.dataset.go));document.querySelectorAll('.nav-item').forEach(n=>{const active=n.dataset.go===b.dataset.go;n.classList.toggle('active',active);if(active)n.setAttribute('aria-current','page');else n.removeAttribute('aria-current')})}));
+document.querySelectorAll('[data-quiz-menu]').forEach(b=>b.addEventListener('click',()=>{stage('multiple-stage');quizView('quiz-menu')}));
+const answers=[0,1,2,0,1,2,0,1,2,0],colors=['red','blue','green','yellow'],fallbacks=['Merah','Biru','Hijau','Kuning'],zoneColors=['#b91c1c','#1d4ed8','#047857','#b45309'];
+const questions=[...document.querySelectorAll('.question')];let players=[],panels=[],q=0,turn=0,multiplayer=false,roundDone=false,matchingChecked=false,selectedCard=null;
+function quizView(id){['quiz-menu','setup','game','results'].forEach(v=>$(v).classList.toggle('hidden',v!==id))}
+function stage(id){['multiple-stage','matching-stage','short-stage'].forEach(v=>$(v).classList.toggle('hidden',v!==id))}
+$('solo').onclick=()=>{multiplayer=false;players=[{name:'Latihan Mandiri',score:0,color:'green'}];start()};
+$('multi').onclick=()=>quizView('setup');
+$('setup').onsubmit=e=>{e.preventDefault();multiplayer=true;players=colors.map((color,i)=>({name:$('p'+i).value.trim()||fallbacks[i],color,score:0}));start()};
+function start(){q=0;turn=0;panels=[];$('player-list').replaceChildren();players.forEach((p,i)=>{const panel=$('player-template').content.firstElementChild.cloneNode(true);panel.style.setProperty('--zone',multiplayer?zoneColors[i]:'#047857');panel.querySelector('[data-template-id="player-name"]').textContent=p.name;panel.querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>choose(i,Number(b.dataset.choice)));panels.push(panel);$('player-list').append(panel)});stage('multiple-stage');quizView('game');renderQuestion()}
+function status(panel,state){['waiting','locked','right','wrong'].forEach(s=>panel.querySelector('.'+s).classList.toggle('hidden',s!==state))}
+function renderQuestion(){roundDone=false;$('next').disabled=true;questions.forEach((node,i)=>{node.classList.toggle('hidden',i!==q);node.querySelectorAll('.option').forEach(o=>o.classList.remove('correct'))});players.forEach((p,i)=>{p.choice=null;const panel=panels[i];status(panel,'waiting');panel.querySelector('[data-template-id="player-score"]').textContent=p.score+' poin';panel.querySelectorAll('[data-choice]').forEach(b=>{b.disabled=false;b.classList.remove('chosen');b.setAttribute('aria-pressed','false')})});$('progress').textContent='Soal '+(q+1)+' / 10 • Tahap 1 dari 3';updateCount()}
+function updateCount(){$('answered-count').textContent=players.filter(p=>p.choice!==null).length+' / '+players.length+' pemain sudah menjawab'}
+function choose(i,choice){if(roundDone||players[i].choice!==null)return;players[i].choice=choice;panels[i].querySelectorAll('[data-choice]').forEach(b=>{b.disabled=true;const chosen=Number(b.dataset.choice)===choice;b.classList.toggle('chosen',chosen);b.setAttribute('aria-pressed',String(chosen))});status(panels[i],'locked');updateCount();if(players.every(p=>p.choice!==null)){roundDone=true;questions[q].querySelectorAll('.option')[answers[q]].classList.add('correct');players.forEach((p,j)=>{const right=p.choice===answers[q];if(right)p.score+=10;status(panels[j],right?'right':'wrong');panels[j].querySelector('[data-template-id="player-score"]').textContent=p.score+' poin'});$('next').disabled=false}}
+$('next').onclick=()=>{if(!roundDone)return;if(++q===questions.length)beginMatching();else renderQuestion()};
+const bank=$('card-bank'),cards=[...document.querySelectorAll('[data-match]')],zones=[...document.querySelectorAll('.drop-zone')];
+function beginMatching(){resetMatching();$('match-turn').textContent=multiplayer?'Giliran '+players[turn].name+' • Pemain '+(turn+1)+' dari 4':'Tahap 2 dari 3';stage('matching-stage')}
+function selectCard(card){if(matchingChecked)return;selectedCard=card;cards.forEach(c=>c.classList.toggle('selected',c===card))}
+function place(card,zone){if(matchingChecked||!card)return;const occupant=zone.querySelector('[data-match]');if(occupant&&occupant!==card)bank.append(occupant);zone.append(card);selectedCard=null;cards.forEach(c=>c.classList.remove('selected'));zones.forEach(z=>z.classList.remove('over'));$('match-feedback').textContent=''}
+cards.forEach(c=>{c.addEventListener('click',e=>{e.stopPropagation();selectCard(c)});c.addEventListener('dragstart',e=>{if(matchingChecked){e.preventDefault();return}selectCard(c);e.dataTransfer.setData('text/plain',c.dataset.match);e.dataTransfer.effectAllowed='move'})});
+zones.forEach(z=>{z.addEventListener('click',()=>{if(selectedCard)place(selectedCard,z);else if(z.querySelector('[data-match]'))selectCard(z.querySelector('[data-match]'))});z.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();if(selectedCard)place(selectedCard,z);else if(z.querySelector('[data-match]'))selectCard(z.querySelector('[data-match]'))}});z.addEventListener('dragover',e=>{if(!matchingChecked){e.preventDefault();z.classList.add('over')}});z.addEventListener('dragleave',()=>z.classList.remove('over'));z.addEventListener('drop',e=>{e.preventDefault();place(cards.find(c=>c.dataset.match===e.dataTransfer.getData('text/plain')),z)})});
+bank.addEventListener('click',e=>{if(e.target===bank&&selectedCard){bank.append(selectedCard);selectedCard.classList.remove('selected');selectedCard=null}});bank.addEventListener('dragover',e=>{if(!matchingChecked)e.preventDefault()});bank.addEventListener('drop',e=>{e.preventDefault();if(matchingChecked)return;const card=cards.find(c=>c.dataset.match===e.dataTransfer.getData('text/plain'));if(card){bank.append(card);cards.forEach(c=>c.classList.remove('selected'));selectedCard=null}});
+function resetMatching(){matchingChecked=false;selectedCard=null;cards.forEach(c=>{bank.append(c);c.classList.remove('selected')});zones.forEach(z=>z.classList.remove('good','bad','over'));$('match-feedback').textContent='';$('check-match').disabled=false;$('match-next').classList.add('hidden')}
+$('check-match').onclick=()=>{if(zones.some(z=>!z.querySelector('[data-match]'))){$('match-feedback').textContent='Isi keempat kotak sebelum memeriksa jawaban.';return}matchingChecked=true;let correct=0;zones.forEach(z=>{const right=z.querySelector('[data-match]').dataset.match===z.dataset.target;z.classList.add(right?'good':'bad');if(right)correct++});players[turn].score+=correct*10;$('match-feedback').textContent=correct+' dari 4 pasangan benar. +'+correct*10+' poin untuk '+players[turn].name+'.';$('check-match').disabled=true;$('match-next').classList.remove('hidden')};
+$('match-next').onclick=()=>{const form=$('short-stage');form.reset();form.querySelectorAll('input').forEach(input=>{input.disabled=false;input.style.borderColor='';input.removeAttribute('aria-invalid')});$('short-feedback').textContent='';form.querySelector('[type="submit"]').classList.remove('hidden');$('short-next').classList.add('hidden');$('short-turn').textContent=multiplayer?'Giliran '+players[turn].name+' • Pemain '+(turn+1)+' dari 4':'Tahap 3 dari 3';stage('short-stage')};
+const normalized=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z]/g,''),valid=[['asysyakur','assyakur','asyshakur','assyakur'],['alhalim','halim'],['alhakim','hakim'],['alwadud','wadud']];
+$('short-stage').onsubmit=e=>{e.preventDefault();let correct=0;for(let i=0;i<4;i++){const input=$('short-'+i),answer=normalized(input.value),ok=answer.length>0&&valid[i].some(v=>answer===normalized(v));input.style.borderColor=ok?'#059669':'#be123c';input.setAttribute('aria-invalid',String(!ok));input.disabled=true;if(ok)correct++}players[turn].score+=correct*10;$('short-feedback').textContent=correct+' dari 4 isian benar. +'+correct*10+' poin untuk '+players[turn].name+'.';e.currentTarget.querySelector('[type="submit"]').classList.add('hidden');$('short-next').classList.remove('hidden')};
+$('short-next').onclick=()=>{if(++turn<players.length)beginMatching();else finish()};
+function finish(){quizView('results');$('result-note').textContent='Pilihan ganda + drag and drop + isian singkat • maksimal 180 poin per pemain';$('result-list').replaceChildren();players.forEach(player=>{const row=$('result-template').content.firstElementChild.cloneNode(true);row.querySelector('[data-template-id="result-value"]').textContent=player.name+' — '+player.score+' / 180 poin';row.querySelector('.save').onclick=e=>savePlayer(player,e.currentTarget,row);$('result-list').append(row)})}
+$('restart').onclick=()=>quizView('quiz-menu');
+let backendRecords=[],ready=false,timer,generation=0;const rowMap=new Map();
+function renderScores(){$('empty').classList.toggle('hidden',backendRecords.length!==0);$('capacity').textContent=backendRecords.length>=900?backendRecords.length+' / 999 skor tersimpan':'';const ranked=backendRecords.slice().sort((a,b)=>Number(b.score)-Number(a.score)).slice(0,20),ids=new Set(ranked.map(r=>r.__backendId));rowMap.forEach((node,id)=>{if(!ids.has(id)){node.remove();rowMap.delete(id)}});ranked.forEach((r,i)=>{let row=rowMap.get(r.__backendId);if(!row){row=$('score-template').content.firstElementChild.cloneNode(true);row.dataset.recordId=r.__backendId;rowMap.set(r.__backendId,row)}const name=row.querySelector('[data-template-id="score-name"]'),value=row.querySelector('[data-template-id="score-value"]'),nt=(i+1)+'. '+(r.player_name||'Pemain'),vt=Number(r.score||0)+' poin';if(name.textContent!==nt)name.textContent=nt;if(value.textContent!==vt)value.textContent=vt;const current=$('score-list').children[i];if(current!==row)$('score-list').insertBefore(row,current||null)})}
+function loadError(){ready=false;$('loading').classList.add('hidden');$('load-error').classList.remove('hidden');$('retry').classList.remove('hidden')}
+async function initialize(){const g=++generation;ready=false;clearTimeout(timer);$('loading').classList.remove('hidden');$('load-error').classList.add('hidden');$('retry').classList.add('hidden');timer=setTimeout(()=>{if(g===generation)loadError()},8000);try{const result=await window.dataSdk.init({onDataChanged(data){if(g!==generation)return;clearTimeout(timer);ready=true;backendRecords=data;$('loading').classList.add('hidden');$('load-error').classList.add('hidden');$('retry').classList.add('hidden');renderScores()}});if(!result.isOk&&g===generation){clearTimeout(timer);loadError()}}catch{if(g===generation){clearTimeout(timer);loadError()}}}
+let writeChain=Promise.resolve(),lastWrite=0;
+async function savePlayer(player,button,row){row.querySelector('.error').classList.add('hidden');row.querySelector('.limit').classList.add('hidden');if(!ready){row.querySelector('.error').classList.remove('hidden');return}if(backendRecords.length>=999){row.querySelector('.limit').classList.remove('hidden');return}button.disabled=true;row.querySelector('.saving').classList.remove('hidden');let success=false;try{const work=writeChain.catch(()=>{}).then(async()=>{const delay=Math.max(0,500-(Date.now()-lastWrite));if(delay)await new Promise(r=>setTimeout(r,delay));if(backendRecords.length>=999){row.querySelector('.limit').classList.remove('hidden');return}lastWrite=Date.now();const result=await window.dataSdk.create({player_name:player.name,zone_color:player.color,score:player.score,quiz_date:new Date().toISOString()});if(result.isOk){success=true;row.querySelector('.saved').classList.remove('hidden')}else row.querySelector('.error').classList.remove('hidden')});writeChain=work;await work}catch{row.querySelector('.error').classList.remove('hidden')}finally{button.disabled=false;button.hidden=success;row.querySelector('.saving').classList.add('hidden')}}
+$('retry').onclick=initialize;initialize();
+</script>
+ </body>
+</html>
